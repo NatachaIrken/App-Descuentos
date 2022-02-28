@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6FF72FD627CD4FEA0032E76B /* contrains.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = contrains.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FF72FD627CD4FEA0032E76B /* app de descuentos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app de descuentos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF72FD927CD4FEA0032E76B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FF72FDB27CD4FEA0032E76B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6FF72FDD27CD4FEA0032E76B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		6FF72FD727CD4FEA0032E76B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6FF72FD627CD4FEA0032E76B /* contrains.app */,
+				6FF72FD627CD4FEA0032E76B /* app de descuentos.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6FF72FD527CD4FEA0032E76B /* contrains */ = {
+		6FF72FD527CD4FEA0032E76B /* app de descuentos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6FF72FEA27CD4FF10032E76B /* Build configuration list for PBXNativeTarget "contrains" */;
+			buildConfigurationList = 6FF72FEA27CD4FF10032E76B /* Build configuration list for PBXNativeTarget "app de descuentos" */;
 			buildPhases = (
 				6FF72FD227CD4FEA0032E76B /* Sources */,
 				6FF72FD327CD4FEA0032E76B /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = contrains;
+			name = "app de descuentos";
 			productName = contrains;
-			productReference = 6FF72FD627CD4FEA0032E76B /* contrains.app */;
+			productReference = 6FF72FD627CD4FEA0032E76B /* app de descuentos.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6FF72FD127CD4FEA0032E76B /* Build configuration list for PBXProject "contrains" */;
+			buildConfigurationList = 6FF72FD127CD4FEA0032E76B /* Build configuration list for PBXProject "app de descuentos" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6FF72FD527CD4FEA0032E76B /* contrains */,
+				6FF72FD527CD4FEA0032E76B /* app de descuentos */,
 			);
 		};
 /* End PBXProject section */
@@ -294,6 +294,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,6 +322,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6FF72FD127CD4FEA0032E76B /* Build configuration list for PBXProject "contrains" */ = {
+		6FF72FD127CD4FEA0032E76B /* Build configuration list for PBXProject "app de descuentos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FF72FE827CD4FF10032E76B /* Debug */,
@@ -348,7 +350,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6FF72FEA27CD4FF10032E76B /* Build configuration list for PBXNativeTarget "contrains" */ = {
+		6FF72FEA27CD4FF10032E76B /* Build configuration list for PBXNativeTarget "app de descuentos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6FF72FEB27CD4FF10032E76B /* Debug */,
