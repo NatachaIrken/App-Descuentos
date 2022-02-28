@@ -1,0 +1,2 @@
+# Constrains
+ clase constrains
