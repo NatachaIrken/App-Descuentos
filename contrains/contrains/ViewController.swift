@@ -16,7 +16,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         pantalla()
-
+        
+        NotificationCenter.default.addObserver(self, selector:#selector(teclado(notificacion:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(teclado(notificacion:) ), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(teclado(notificacion:)), name: UIResponder.keyboardDidChangeFrameNotification, object: nil)
     }
 
     
@@ -45,5 +50,9 @@ class ViewController: UIViewController {
         }
     }
 
+    @objc func teclado(notificacion: Notification){
+        
+    }
+    
 }
 
