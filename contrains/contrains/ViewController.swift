@@ -8,9 +8,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     
     @IBOutlet weak var bottomConstrain: NSLayoutConstraint!
+    
+    
+    
+    @IBOutlet weak var total: UILabel!
+    
+    @IBOutlet weak var descuento: UILabel!
+    
+    @IBOutlet weak var cantidadText: UITextField!
+    
+    @IBOutlet weak var porcentajeText: UITextField!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +33,9 @@ class ViewController: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(teclado(notificacion:) ), name: UIResponder.keyboardWillHideNotification, object: nil)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(teclado(notificacion:)), name: UIResponder.keyboardDidChangeFrameNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(teclado(notificacion:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
-
+    
     
     func pantalla(){
         if UIDevice().userInterfaceIdiom == .phone {
@@ -43,16 +55,33 @@ class ViewController: UIViewController {
                 print("Iphone XS MAX")
             default:
                 print("Cualquier otro tamaño")
-            
+                
                 
                 
             }
         }
     }
-
+    
     @objc func teclado(notificacion: Notification){
+        guard let tecladoUp = (notificacion.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
+        
+        if notificacion.name == UIResponder.keyboardWillShowNotification {
+            if UIScreen.main.nativeBounds.height == 2436 {
+                self.view.frame.origin.y =  -tecladoUp.height
+                
+            }
+        } else{
+            self.view.frame.origin.y = 0
+        }
         
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
+
+
+
+
 

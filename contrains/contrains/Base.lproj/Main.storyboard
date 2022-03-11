@@ -124,6 +124,10 @@
                     </view>
                     <connections>
                         <outlet property="bottomConstrain" destination="T8n-Nt-MOv" id="ny0-WQ-hxW"/>
+                        <outlet property="cantidadText" destination="4F9-Kb-J4V" id="Igu-a6-eQ3"/>
+                        <outlet property="descuento" destination="bU8-ad-JwY" id="L4S-g5-A8S"/>
+                        <outlet property="porcentajeText" destination="oLH-66-CcI" id="uJZ-o8-3kg"/>
+                        <outlet property="total" destination="3o1-n2-Fak" id="AJz-e0-KrY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
