@@ -78,8 +78,36 @@ class ViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+        
+    }
+    
+    @IBAction func calcular(_ sender: UIButton) {
+        self.view.endEditing(true)
+        guard let numero = cantidadText.text else { return }
+        guard let porc = porcentajeText.text else { return }
+        let cant = (numero as NSString).floatValue
+        let porciento = (porc as NSString).floatValue
+        
+        let desc = cant * porciento / 100
+        let totalFinal = cant - desc
+        
+        total.text = "$\(totalFinal)"
+        descuento.text = "$\(desc)"
+        
+    }
+    
+    @IBAction func limpiar(_ sender: UIButton) {
+        self.view.endEditing(true)
+        total.text = "$0.00"
+        descuento.text = "$0.00"
+        cantidadText.text = ""
+        porcentajeText.text = ""
+        
+
     }
 }
+
+
 
 
 
